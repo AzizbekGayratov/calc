@@ -1,0 +1,80 @@
+@import url("./fonts.css");
+@import url("./global.css");
+@import url("./variables.css");
+
+.container {
+    max-width: 992px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-top: 20px;
+}
+
+.wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 32px;
+}
+
+.buttons_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.btn {
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 24px;
+    border: none;
+    color: var(--text-color);
+    background-color: var(--btn-bg-color);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    opacity: 0.6;
+    transition: all 0.3s ease-in-out;
+}
+
+.right_btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.top_btn {
+    background-color: var(--top-btn-bg-color);
+    color: var(--text-color);
+}
+
+.result_wrapper{
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: 0%;
+    text-align: right;
+    padding-right: 16px;
+}
+
+input {
+    width: 100%;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: 0%;
+    text-align: right;
+    border: none;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding-right: 16px;
+}
