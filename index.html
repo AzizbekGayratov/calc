@@ -95,9 +95,15 @@
           event.key === "8" ||
           event.key === "9" ||
           event.key === "0" ||
-          event.key === "."
+          event.key === "." ||
+          event.key === "-" ||
+          event.key === "+" ||
+          event.key === "*" ||
+          event.key === "/"
         ) {
           append(event.key);
+        } else if (event.key === "%") {
+          percentage();
         }
       });
     </script>
